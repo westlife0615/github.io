@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
 
@@ -8,22 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="https://toss.im/assets/img/favicon.ico">
 
-    <!-- stylesheets -->
+    &lt;!&ndash; stylesheets &ndash;&gt;
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://static.toss.im/tds/current/css/tds.min.css">
     <link rel="stylesheet" type="text/css" href="css/prism.css" />
     <link rel="stylesheet" type="text/css" href="css/tossdev.css" />
 
-    <!-- javascript -->
+    &lt;!&ndash; javascript &ndash;&gt;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <!--[if lt IE 9]>
+    &lt;!&ndash;[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <![endif]&ndash;&gt;
 </head>
 
 <body id="gettingstarted" data-spy="scroll" data-target="#guide" data-offset="0">
-    <!-- Google Tag Manager -->
+    &lt;!&ndash; Google Tag Manager &ndash;&gt;
     <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TPTMLG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
@@ -43,8 +44,8 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TPTMLG');
     </script>
-    <!-- End Google Tag Manager -->
-    <!--
+    &lt;!&ndash; End Google Tag Manager &ndash;&gt;
+    &lt;!&ndash;
     <header id="tossdev-header">
         <div class="container">
             <div class="row">
@@ -52,7 +53,7 @@
             </div>
         </div>
     </header>
--->
+&ndash;&gt;
 
 
     <div class="sidebar">
@@ -82,7 +83,7 @@
                     <ul class="nav">
                         <li><a href="#create-1">API Endpoint</a></li>
                         <li><a href="#create-2">필수 Parameters</a></li>
-                        <!--<li><a href="#create-4">결제 결과 callback URL</a></li>-->
+                        &lt;!&ndash;<li><a href="#create-4">결제 결과 callback URL</a></li>&ndash;&gt;
                         <li><a href="#create-6">결제 만료 기한</a></li>
                         <li><a href="#create-7">에스크로 여부</a></li>
                         <li><a href="#create-8">현금영수증 발급 가능 여부</a></li>
@@ -162,8 +163,8 @@
                         <li><strong>테스트용 Key</strong> : 이 Key를 사용하면 결제의 모든 과정이 실제 결제와 동일하게 진행됩니다. 통장에서 결제 금액이 '출금'되는 것만 빼고요. 돈 빠져나갈 걱정 없이 마음껏 테스트해볼 수 있기 때문에 개발 시 유용하게 사용할 수 있습니다.</li>
                         <li><strong>실거래용 Key</strong> : 이 Key를 사용해야 진짜 '출금'되는 결제를 할 수 있습니다. 상점에 오신 손님과 결제를 진행할 땐 꼭 이것을 사용해야 합니다.</li>
                     </ul>
-                    <!--<p>토스 결제를 한번 테스트 해보고싶지만 당장 가입하긴 귀찮다면, 아래 테스트용 Key를 사용하세요.</p>-->
-                    <!--<div class="well">테스트용 API Key : sk_test_apikey1234567890</div>-->
+                    &lt;!&ndash;<p>토스 결제를 한번 테스트 해보고싶지만 당장 가입하긴 귀찮다면, 아래 테스트용 Key를 사용하세요.</p>&ndash;&gt;
+                    &lt;!&ndash;<div class="well">테스트용 API Key : sk_test_apikey1234567890</div>&ndash;&gt;
                     <h4 id="overview-2">2. 토스 결제 생성을 요청합니다</h4>
                     <p>고객은 토스몰을 둘러보다가 35,000원짜리 '토스 티셔츠'를 선택하여 결제를 요청합니다. 이 때 토스몰은 토스 결제 서버에게 '결제 생성'을 요청해야합니다. 결제 생성 API를 호출하세요.</p>
                     <div class="well">
@@ -531,7 +532,7 @@ echo "Response: ".$result;</code></pre>
                         <li><strong>상점 API Key</strong> : 이곳에 '테스트용 Key'를 넣으면 테스트 결제가, '실거래용 Key'를 넣으면 진짜 출금되는 결제가 생성됩니다.</li>
                         <li><strong>구매자 승인 완료 후 연결할 URL</strong> : 구매자가 결제를 승인하면 이 파라미터를 통해 등록한 URL로 구매자를 보내드립니다. 일반적으로 구매 완료 페이지 또는 구매 완료 페이지로 연결할 수 있는 곳을 지정합니다.</li>
                     </ol>
-                    <!--
+                    &lt;!&ndash;
                     <h4 id="create-4">결제 결과 callback URL (resultCallback)</h4>
                     <p>결제 생성이 성공적으로 끝나면, 해당 결제건은 '결제 대기' 상태가 됩니다. 이후, 결제는 '완료'되거나 '취소'되거나 혹은 '환불'처리됩니다.</p>
                     <p>그러한 상태 변경이 있을 때 마다 상점의 주문 상태를 변경하거나 구매자에게 안내를 해주어야 한다면 '결제 결과에 대한 callback' 파라미터를 사용하세요. 이 파라미터에 응답을 받을 URL을 등록하시면, 아래와 같이 callback을 보내드리겠습니다.</p>
@@ -549,7 +550,7 @@ echo "Response: ".$result;</code></pre>
                         <li><strong>PAY_CANCEL</strong> : 결제가 완료되기 전에 취소됨</li>
                         <li><strong>REFUND_SUCCESS</strong> : 완료된 결제가 환불 처리됨</li>
                     </ul>
--->
+&ndash;&gt;
                     <h4 id="create-6">결제 만료 기한 (expiredTime)</h4>
                     <p>이 파라미터를 통해 '결제 생성 후, 언제까지 결제 승인을 진행할 수 있는지' 설정할 수 있습니다. '결제 대기' 상태인 결제건의 만료 기한이 도래하면 자동으로 결제가 취소됩니다.</p>
                     <p>상점 혹은 판매 물품에 특성에 따라 결제 만료 기간을 길게 혹은 짧게 설정할 수 있습니다.</p>
@@ -932,3 +933,4 @@ echo "Response: ".$result;</code></pre>
 </body>
 
 </html>
+-->
