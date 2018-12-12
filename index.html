@@ -9,36 +9,33 @@
   })(window,document,'script','dataLayer','GTM-MWX32F6');</script>
   <!-- End Google Tag Manager -->
   <script>
-    window.impression = function () {
+    window.impression = function ( data ) {
       window.dataLayer.push(
         {data: undefined},
         {
-          event: 'impression', data: {
-            id: 1,
-            name: '바지',
-            price: 4000
-          }
+          event: 'impression', data: data
         });
-    }
-
-    window.itemView = function(){
-      window.dataLayer.push(
-        {data : undefined},
-        {
-          event : 'itemView',
-          data : {
-            id : 1,
-            name : '바지',
-            price : 4000
-          }
-        }
-      );
     }
   </script>
 
 </head>
 <body>
-<button onclick="impression()"> impression </button>
-<button onclick="itemView()"> itemView </button>
+  <h1>상품명 : 바지</h1>
+    <h1>가격 : 4000</h1>
+    <h1>아이디 : 1</h1>
+<button onclick="impression({
+                  id : 1,
+                 price : 4000,
+                 name : '바지'
+                 })"> impression </button>
+  
+  <h1>상품명 : 셔츠</h1>
+    <h1>가격 : 4000</h1>
+    <h1>아이디 : 2</h1>
+<button onclick="impression({
+                  id : 2,
+                 price : 4000,
+                 name : '셔츠'
+                 })"> impression </button>
 </body>
 </html>
